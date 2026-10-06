@@ -29,21 +29,21 @@ class StudentExam
       float per;
    public:
       void accept_data(){
-         cout<<"\nEnter Marks for subject 1: ";
-         cin>>sub1;
+     cout<<"\nEnter Marks for subject 1: ";
+	 cin>>sub1;
 	 cout<<"\nEnter Marks for subject 2: ";
-         cin>>sub2;
+	 cin>>sub2;
 	 cout<<"\nEnter Marks for subject 3: ";
-         cin>>sub3;
+	 cin>>sub3;
 	 cout<<"\nEnter Marks for subject 4: ";
-         cin>>sub4;
+	 cin>>sub4;
 	 cout<<"\nEnter Marks for subject 5: ";
-         cin>>sub5;
+	 cin>>sub5;
 	 cout<<"\nEnter Marks for subject 6: ";
-         cin>>sub6;
+	 cin>>sub6;
       }
       void display_data(){
-         cout<<"\nMarks of subject 1: "<<sub1;
+     cout<<"\nMarks of subject 1: "<<sub1;
  	 cout<<"\nMarks of subject 2: "<<sub2;
 	 cout<<"\nMarks of subject 3: "<<sub3;
 	 cout<<"\nMarks of subject 4: "<<sub4;
@@ -63,7 +63,7 @@ class StudentResult:public Student,public StudentExam
 	 display_data();
       }
       void calculate(){
-         per=(sub1+sub2+sub3+sub4+sub5+sub6)/6.0;
+	 per=(sub1+sub2+sub3+sub4+sub5+sub6)/6.0;
 	 cout<<"\n\nTotal Percentage: "<<per;
 	 cout<<"\n------------------------------\n";
       }
