@@ -6,7 +6,6 @@ int main(){
    ofstream fout("New_Document.txt");
    fout<<"Welcome to my new document";
    string line;
-   fout.open("New_Document.txt");
    while(fout){
       getline (cin,line);
       if(line=="-1")
@@ -14,8 +13,7 @@ int main(){
       fout<<line<<endl;
    }
    fout.close();
-   ifstream fin;
-   fin.open("New_Document.txt");
+   ifstream fin("New_Document.txt");
    while(getline(fin,line)){
       cout<<line<<endl;
    }
